@@ -1,4 +1,4 @@
-# **SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys
+# SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys
 
 ---
 
@@ -12,7 +12,7 @@ An ERD diagram is included to visually represent the database schema and relatio
 
 ---
 
-![ERD Scratch](https://github.com/najirh/amazon_usa_project5/blob/main/erd2.png)
+![ERD Scratch](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/Entity_Relationship_Diagram.png)
 
 ## **Database Setup & Design**
 
