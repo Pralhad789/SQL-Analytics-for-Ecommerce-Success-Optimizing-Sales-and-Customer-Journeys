@@ -1,12 +1,21 @@
 # SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys
 
+## Table of contents
+1. [Business Problem](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#business-problem)
+2. [Project Overview](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#project-overview)
+3. [Data Overview](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#data-overview)
+	a. [Entity Relationship Diagram (ERD)](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#erd-diagram)
+	b. [Schema Structure](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#schema-structure)
+4. [Data Cleaning](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#data-cleaning)
+5. [Challenges Identified](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#challenges-identified)
+6. [Solving Business Problems (SQL Queries)](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#solving-business-problems)
+7. [Result and Business Impact](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#results--business-impact)
+8. [Recommendations](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#recommendations)
+9. [Conclusion](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#conclusion)
+
 ## **Business Problem**
 
 ShopMart, an e-commerce platform is experiencing operational challenges related to sales performance, customer behavior, and inventory management. Despite having a large and diverse customer base, with over 20,000 sales records and 10,000 products, the business has faced several key issues that are limiting growth. These include inconsistent product restocking, high return rates in certain categories, shipping delays, and increasing customer acquisition costs without a proportional increase in customer retention. ShopMart’s Senior Executive leadership team is seeking insights into how they can optimize their operations and improve overall profitability.
-
-## Table of contents
-[Business Problem](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#business-problem)
-
 
 ## **Project Overview**
 The objective of this project is to use advanced SQL techniques to analyze ShopMart’s sales and operational data to address critical e-commerce business challenges. The focus is on optimizing sales trends, identifying top and underperforming products, segmenting customer behavior, and improving inventory management processes. Complex SQL queries, including the use of window functions, Common Table Expressions (CTEs), various types of joins, query optimization techniques, and stored procedures, were employed to tackle business problems such as revenue analysis, customer segmentation, inventory stock alerts, and shipping performance. Additionally, this analysis will involve data cleaning, managing missing values, and structuring queries to solve real-world business problems.
@@ -203,7 +212,7 @@ To address the business challenges, the following SQL-based tasks were undertake
 
 **12. Inactive Sellers:** Find sellers who haven’t made sales in the last 6 months and suggest actions to engage them.
 
-### Solutions Implemented:
+### Solutions Implemented
 **1. Top Selling Products:**
 
 ```sql
