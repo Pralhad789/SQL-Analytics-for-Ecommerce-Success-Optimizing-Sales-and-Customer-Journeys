@@ -5,7 +5,7 @@
 ShopMart, an e-commerce platform is experiencing operational challenges related to sales performance, customer behavior, and inventory management. Despite having a large and diverse customer base, with over 20,000 sales records and 10,000 products, the business has faced several key issues that are limiting growth. These include inconsistent product restocking, high return rates in certain categories, shipping delays, and increasing customer acquisition costs without a proportional increase in customer retention. ShopMart’s Senior Executive leadership team is seeking insights into how they can optimize their operations and improve overall profitability.
 
 ## Table of contents
-
+(https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#business-problem) (#Business Problem)
 
 
 ## **Project Overview**
