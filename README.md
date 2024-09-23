@@ -9,7 +9,16 @@ ShopMart, an e-commerce platform is experiencing operational challenges related 
 ## **Project Overview**
 The objective of this project is to use advanced SQL techniques to analyze ShopMart’s sales and operational data to address critical e-commerce business challenges. The focus is on optimizing sales trends, identifying top and underperforming products, segmenting customer behavior, and improving inventory management processes. Complex SQL queries, including the use of window functions, Common Table Expressions (CTEs), various types of joins, query optimization techniques, and stored procedures, were employed to tackle business problems such as revenue analysis, customer segmentation, inventory stock alerts, and shipping performance. Additionally, this analysis will involve data cleaning, managing missing values, and structuring queries to solve real-world business problems.
 
-## **Database Setup & Design**
+## **Data Overview**
+
+The dataset consists of multiple tables including:
+
+* **Customers:** Contains customer information (e.g., ID, name, registration date, address, etc.).
+* **Orders:** Captures sales transactions including order ID, customer ID, product ID, order date, payment status, and shipping details.
+* **Products:** Contains product information including product name, category, price, and cost of goods sold.
+* **Inventory:** Tracks stock levels and restock dates for each product.
+* **Returns:** Contains details on product returns including return dates and reasons.
+* **Shipping Providers:** Includes information about the shipping provider used for each order, along with their average delivery times.
 
 ### **ERD Diagram **
 
