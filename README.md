@@ -1,7 +1,5 @@
 # SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys
 
-
-
 ## **Business Context**
 
 ShopMart, an e-commerce platform is experiencing operational challenges related to sales performance, customer behavior, and inventory management. Despite having a large and diverse customer base, with over 20,000 sales records and 10,000 products, the business has faced several key issues that are limiting growth. These include inconsistent product restocking, high return rates in certain categories, shipping delays, and increasing customer acquisition costs without a proportional increase in customer retention. ShopMart’s Senior Executive leadership team is seeking insights into how they can optimize their operations and improve overall profitability.
@@ -118,7 +116,7 @@ CREATE TABLE inventory
   );
 ```
 
----
+
 
 ## **Data Cleaning**
 
@@ -160,7 +158,7 @@ FROM shipments
 WHERE return_date IS NULL;
 ```
 
----
+
 
 ## **Challenges Identified**
 
@@ -172,7 +170,7 @@ Through preliminary data exploration and discussions with ShopMart’s leadershi
 * **Low customer retention:** High customer acquisition costs are not translating into long-term customer loyalty, with retention rates remaining low despite marketing efforts.
 * **Payment success rate:** A large number of orders have failed payment statuses, contributing to missed revenue opportunities.
 
----
+
 
 ## **Solving Business Problems**
 To address the business challenges, the following SQL-based tasks were undertaken as part of the project:
@@ -734,7 +732,6 @@ END;
 $$
 ```
 
----
 ## Results & Business Impact
 * **Restocking Issues:** Identified 150 high-demand products frequently out of stock, resulting in $500,000 in lost revenue. A stock alert system  implemented, reducing stockouts.
 
@@ -748,7 +745,6 @@ $$
 
 * **Top-Selling Products:** Electronics and home goods generated $1.2 million monthly. Focused restocking and promotions increased sales by 10%.
 
----
 
 ## Recommendations
 * **Inventory Management:** Implement dynamic restocking for high-demand items generating over $50,000 in monthly revenue to prevent stockouts.
@@ -760,17 +756,10 @@ $$
 * **Customer Retention:** Focus on retaining 1,500 high-value customers and converting 1,200 inactive customers through targeted marketing.
 
 * **Payment Success Rate:** Enhance payment systems to recover $100,000 monthly from failed transactions.
----
+
 
 ## **Conclusion**
 
-This advanced SQL project successfully demonstrates my ability to solve real-world e-commerce problems using structured queries. From improving customer retention to optimizing inventory and logistics, the project provides valuable insights into operational challenges and solutions.
-
-By completing this project, I have gained a deeper understanding of how SQL can be used to tackle complex data problems and drive business decision-making.
-
----
-
-### **Entity Relationship Diagram (ERD)**
-![ERD](https://github.com/najirh/amazon_usa_project5/blob/main/erd.png)
+This busniess case study provided valuable insights into key operational challenges faced by ShopMart, including inventory management, customer retention, and shipping performance. By leveraging advanced SQL techniques such as window functions, CTEs, query optimization, complex joins, subqueries, and stored procedures, the analysis uncovered areas for improvement, such as restocking processes, return rate reduction, and shipping provider selection. These insights led to actionable recommendations that are expected to enhance operational efficiency, boost customer satisfaction, and increase overall profitability. The project highlights the critical role of data-driven decision-making, using advanced SQL to solve business challenges and position ShopMart for long-term growth.
 
 ---
