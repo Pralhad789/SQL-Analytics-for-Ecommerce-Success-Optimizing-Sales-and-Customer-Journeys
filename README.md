@@ -20,7 +20,7 @@ The dataset consists of multiple tables including:
 * **Returns:** Contains details on product returns including return dates and reasons.
 * **Shipping Providers:** Includes information about the shipping provider used for each order, along with their average delivery times.
 
-### **ERD Diagram **
+### **ERD Diagram**
 
 ![ERD Scratch](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/Entity_Relationship_Diagram.png)
 
@@ -120,20 +120,45 @@ CREATE TABLE inventory
 
 ---
 
-## **Task: Data Cleaning**
+## **Data Cleaning**
 
-I cleaned the dataset by:
-- **Removing duplicates**: Duplicates in the customer and order tables were identified and removed.
-- **Handling missing values**: Null values in critical fields (e.g., customer address, payment status) were either filled with default values or handled using appropriate methods.
+The dataset was cleaned using a series of SQL operations aimed at ensuring data integrity and consistency:
 
+* **Removing duplicates:** Duplicate records in both the customer and order tables were identified using a combination of ROW_NUMBER() window functions and PARTITION BY clauses. Rows with duplicate customer_id and order_id were flagged, and only the first occurrence of each was retained, while the rest were deleted using DELETE with a CTE for efficient removal.
+```sql
+WITH cte_duplicates AS (
+    SELECT *, ROW_NUMBER() OVER (PARTITION BY customer_id, order_id ORDER BY created_at) AS row_num
+    FROM orders
+)
+DELETE FROM orders
+WHERE order_id IN (SELECT order_id FROM cte_duplicates WHERE row_num > 1);
+```
 ---
 
 ## **Handling Null Values**
 
-Null values were handled based on their context:
-- **Customer addresses**: Missing addresses were assigned default placeholder values.
-- **Payment statuses**: Orders with null payment statuses were categorized as “Pending.”
-- **Shipping information**: Null return dates were left as is, as not all shipments are returned.
+Null values were handled contextually using SQL functions and logic:
+
+- **Customer addresses**: For records where the address was missing, COALESCE() was used to replace null values with a default placeholder ("Unknown Address") while ensuring that legitimate non-null values remained unchanged.
+```sql
+UPDATE customers
+SET address = COALESCE(address, 'Unknown Address')
+WHERE address IS NULL;
+```
+
+- **Payment statuses**: Orders with missing payment statuses were assigned a default value of "Pending" by checking for NULL and updating the relevant records using the COALESCE() function.
+```sql
+UPDATE orders
+SET payment_status = COALESCE(payment_status, 'Pending')
+WHERE payment_status IS NULL;
+```
+
+- **Shipping information**: For null return_date fields, no updates were made as nulls were valid entries indicating unreturned shipments. This was handled by allowing null values to remain unchanged unless explicitly required for reporting.
+```sql
+SELECT order_id, product_id, return_date
+FROM shipments
+WHERE return_date IS NULL;
+```
 
 ---
 
