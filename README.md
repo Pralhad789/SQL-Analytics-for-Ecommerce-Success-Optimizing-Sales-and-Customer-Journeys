@@ -124,7 +124,7 @@ CREATE TABLE inventory
 
 The dataset was cleaned using a series of SQL operations aimed at ensuring data integrity and consistency:
 
-* **Removing duplicates:** Duplicate records in both the customer and order tables were identified using a combination of ROW_NUMBER() window functions and PARTITION BY clauses. Rows with duplicate customer_id and order_id were flagged, and only the first occurrence of each was retained, while the rest were deleted using DELETE with a CTE for efficient removal.
+### **Removing duplicates:** Duplicate records in both the customer and order tables were identified using a combination of ROW_NUMBER() window functions and PARTITION BY clauses. Rows with duplicate customer_id and order_id were flagged, and only the first occurrence of each was retained, while the rest were deleted using DELETE with a CTE for efficient removal.
 ```sql
 WITH cte_duplicates AS (
     SELECT *, ROW_NUMBER() OVER (PARTITION BY customer_id, order_id ORDER BY created_at) AS row_num
@@ -133,9 +133,9 @@ WITH cte_duplicates AS (
 DELETE FROM orders
 WHERE order_id IN (SELECT order_id FROM cte_duplicates WHERE row_num > 1);
 ```
----
 
-## **Handling Null Values**
+
+### **Handling Null Values**
 
 Null values were handled contextually using SQL functions and logic:
 
