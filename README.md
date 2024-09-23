@@ -1,4 +1,4 @@
-# SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys
+# Elevating ShopMart's Inventory Management and Quality Assurance
 
 ## Table of contents
 1. [Business Problem](https://github.com/Pralhad789/SQL-Analytics-for-Ecommerce-Success-Optimizing-Sales-and-Customer-Journeys/blob/main/README.md#business-problem)
