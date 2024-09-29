@@ -25,6 +25,7 @@ The objective of this project is to use advanced SQL techniques to analyze ShopM
 2. Identifying top and underperforming products
 3. Segmenting customer behavior
 4. Improving inventory management processes
+
 Complex **SQL** queries, including the use of **window functions**, Common Table Expressions (**CTEs**), **complex joins**, **query optimization** techniques, and **stored procedures**, were employed to tackle business problems such as revenue analysis, customer segmentation, inventory stock alerts, and shipping performance. Additionally, this analysis will involve data cleaning, managing missing values, and structuring queries to solve real-world business problems.
 
 ## **Data Overview**
