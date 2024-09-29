@@ -20,7 +20,12 @@
 ShopMart, an e-commerce platform is experiencing operational challenges related to sales performance, customer behavior, and inventory management. Despite having a large and diverse customer base, with over 20,000 sales records and 10,000 products, the business has faced several key issues that are limiting growth. These include inconsistent product restocking, high return rates in certain categories, shipping delays, and increasing customer acquisition costs without a proportional increase in customer retention. ShopMart’s Senior Executive leadership team is seeking insights into how they can optimize their operations and improve overall profitability.
 
 ## **Project Overview**
-The objective of this project is to use advanced SQL techniques to analyze ShopMart’s sales and operational data to address critical e-commerce business challenges. The focus is on optimizing sales trends, identifying top and underperforming products, segmenting customer behavior, and improving inventory management processes. Complex SQL queries, including the use of window functions, Common Table Expressions (CTEs), various types of joins, query optimization techniques, and stored procedures, were employed to tackle business problems such as revenue analysis, customer segmentation, inventory stock alerts, and shipping performance. Additionally, this analysis will involve data cleaning, managing missing values, and structuring queries to solve real-world business problems.
+The objective of this project is to use advanced SQL techniques to analyze ShopMart’s sales and operational data to address critical e-commerce business challenges. The focus is on :
+1. Optimizing sales trends
+2. Identifying top and underperforming products
+3. Segmenting customer behavior
+4. Improving inventory management processes
+Complex **SQL** queries, including the use of **window functions**, Common Table Expressions (**CTEs**), **complex joins**, **query optimization** techniques, and **stored procedures**, were employed to tackle business problems such as revenue analysis, customer segmentation, inventory stock alerts, and shipping performance. Additionally, this analysis will involve data cleaning, managing missing values, and structuring queries to solve real-world business problems.
 
 ## **Data Overview**
 
